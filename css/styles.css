@@ -11,8 +11,8 @@
 html {
 
     background-color: var(--azul);
-    font-size: 62.5%;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -28,9 +28,9 @@ h1, h2, h3 {
     margin: 2rem 0;
 }
 h1 {
+    color: var(--blanco);
     font-size: 4.8rem;
     text-align: center;
-    color: var(--blanco);
 }
 h2 {
     font-size: 5.8rem;
@@ -45,17 +45,16 @@ img {
     max-width: 100%;
 }
 .contenedor {
-    max-width: 120rem;
     margin-inline: auto;
+    max-width: 120rem;
     width: 90%;
 }
 
-
 .caja-curso {
     background-color: var(--naranja);
-    text-align: center;
     color: var(--blanco);
     padding: 5rem;
+    text-align: center;
 
 }
 .caja-curso h1 {
@@ -65,11 +64,29 @@ img {
     font-size: 2.4rem;
 }
 .caja-curso a {
+    color: var(--blanco);
+    display: inline-block;
     font-size: 2.4rem;
     padding: 2rem;
-    display: inline-block;
-    text-decoration: none;
-    color: var(--blanco);
     padding: 0;
+    text-decoration: none;
+}
+
+.productos{
+    margin-top: 5rem;
+}
+
+.productos__heading{
+    color: var(--blanco);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .productos__grid{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
