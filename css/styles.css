@@ -129,6 +129,11 @@ img {
     margin: 0;
 }
 
+.producto__precio--oferta{
+    color: red;
+    text-decoration-line: line-through
+}
+
 .producto__boton{
     all: unset;
     background-color: var(--azul);
